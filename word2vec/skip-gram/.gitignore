@@ -1,0 +1,4 @@
+.idea
+venv/
+w2v/__pycache__*
+model.save*
