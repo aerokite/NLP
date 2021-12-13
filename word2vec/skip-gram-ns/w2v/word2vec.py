@@ -91,12 +91,11 @@ def training_data(sentences, word2idx, window_size, ):
 
 
 # Save model for further use
-def save(bw1, bw2, word2idx, loss_list):
+def save(bw1, bw2, word2idx):
     save_data = {
         "bw1": bw1,
         "bw2": bw2,
         "word2idx": word2idx,
-        "loss": loss_list,
     }
 
     with open("model.save", 'wb') as f:
@@ -234,5 +233,6 @@ class Word2Vec:
                 self.check(W1, cw)
 
             self.alpha *= 1.0 / (1.0 + self.alpha * e)
+            save(W1, W2, self.word2idx)
 
         return W1, W2
