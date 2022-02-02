@@ -1,0 +1,12 @@
+models/__pycache__
+utils/__pycache__
+.DS_Store
+.vscode/
+.data/
+data/
+try.py
+test.py
+somefile.txt
+read.py
+hug.py
+pre.sh

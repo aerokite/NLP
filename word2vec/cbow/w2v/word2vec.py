@@ -131,6 +131,7 @@ class Word2Vec:
         # forward propagation
         x = np.mean(np.array([tx for tx in train_x]), axis=0)
         h = np.dot(w1.T, x)
+
         u = np.dot(w2.T, h)
         yp = softmax(u)
 
@@ -140,6 +141,7 @@ class Word2Vec:
         # backward propagation
         delta_h = np.outer(x, np.dot(w2, ep))
         delta_o = np.outer(h, ep)
+
         nw1 = w1 - self.alpha * delta_h
         nw2 = w2 - self.alpha * delta_o
 
