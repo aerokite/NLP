@@ -23,60 +23,80 @@
     test_translation = "The old woman is watching the football match and eating candy."
 
     Epoch: 01 | Time: 0m 15s
-        Train Loss: 3.831 | Train Exp:  46.098
-        Val. Loss: 2.854 |  Val. Exp:  17.349
+        Train Loss: 3.811 | Train Exp:  45.217
+        Val. Loss: 2.776 |  Val. Exp:  16.047
         Learning Rate: 0.0005000
     Translated example sentence: 
-    the old woman is looking at the park and holding her face .
+    the woman is about to be the ocean and <unk> <unk> .
 
     Epoch: 02 | Time: 0m 15s
-        Train Loss: 2.561 | Train Exp:  12.947
-        Val. Loss: 2.257 |  Val. Exp:   9.553
-        Learning Rate: 0.0004750
+        Train Loss: 2.505 | Train Exp:  12.244
+        Val. Loss: 2.222 |  Val. Exp:   9.226
+        Learning Rate: 0.0004250
     Translated example sentence: 
     the old woman is looking at the soccer game .
 
+    Epoch: 03 | Time: 0m 15s
+        Train Loss: 2.022 | Train Exp:   7.553
+        Val. Loss: 1.972 |  Val. Exp:   7.188
+        Learning Rate: 0.0003612
+    Translated example sentence: 
+    the old woman is eating the soccer game .
+
     Epoch: 04 | Time: 0m 15s
-        Train Loss: 1.786 | Train Exp:   5.965
-        Val. Loss: 1.860 |  Val. Exp:   6.425
-        Learning Rate: 0.0004287
+        Train Loss: 1.725 | Train Exp:   5.615
+        Val. Loss: 1.835 |  Val. Exp:   6.268
+        Learning Rate: 0.0003071
     Translated example sentence: 
     the old woman is looking at the soccer game .
 
     Epoch: 05 | Time: 0m 15s
-        Train Loss: 1.562 | Train Exp:   4.768
-        Val. Loss: 1.779 |  Val. Exp:   5.925
-        Learning Rate: 0.0004073
+        Train Loss: 1.505 | Train Exp:   4.506
+        Val. Loss: 1.762 |  Val. Exp:   5.822
+        Learning Rate: 0.0002610
     Translated example sentence: 
-    the old woman is looking at the soccer ball and eating .
+    the old woman is looking at the soccer game .
+
+    Epoch: 06 | Time: 0m 15s
+        Train Loss: 1.337 | Train Exp:   3.807
+        Val. Loss: 1.718 |  Val. Exp:   5.573
+        Learning Rate: 0.0002219
+    Translated example sentence: 
+    the old woman is looking at the soccer game .
 
     Epoch: 07 | Time: 0m 15s
-        Train Loss: 1.229 | Train Exp:   3.416
-        Val. Loss: 1.721 |  Val. Exp:   5.592
-        Learning Rate: 0.0003675
+        Train Loss: 1.201 | Train Exp:   3.323
+        Val. Loss: 1.696 |  Val. Exp:   5.453
+        Learning Rate: 0.0001886
     Translated example sentence: 
     the old woman is looking at the soccer ball and eating .
 
     Epoch: 08 | Time: 0m 15s
-        Train Loss: 1.095 | Train Exp:   2.989
-        Val. Loss: 1.725 |  Val. Exp:   5.612
-        Learning Rate: 0.0003492
+        Train Loss: 1.092 | Train Exp:   2.981
+        Val. Loss: 1.687 |  Val. Exp:   5.406
+        Learning Rate: 0.0001603
     Translated example sentence: 
-    the old woman is at the soccer game , as she is eating .
+    the old woman is eating the soccer game .
+
+    Epoch: 09 | Time: 0m 15s
+        Train Loss: 1.000 | Train Exp:   2.718
+        Val. Loss: 1.688 |  Val. Exp:   5.409
+        Learning Rate: 0.0001362
+    Translated example sentence: 
+    the old woman is looking at the soccer game .
 
     Epoch: 10 | Time: 0m 15s
-        Train Loss: 0.873 | Train Exp:   2.393
-        Val. Loss: 1.741 |  Val. Exp:   5.701
-        Learning Rate: 0.0003151
+        Train Loss: 0.924 | Train Exp:   2.521
+        Val. Loss: 1.691 |  Val. Exp:   5.427
+        Learning Rate: 0.0001158
     Translated example sentence: 
-    the old woman is looking at the soccer ball and eating candy .
+    the old woman is looking at the soccer ball and eating .
 
-    Epoch: 12 | Time: 0m 15s
-        Train Loss: 0.697 | Train Exp:   2.008
-        Val. Loss: 1.817 |  Val. Exp:   6.154
-        Learning Rate: 0.0002844
+    Epoch: 11 | Time: 0m 15s
+        Train Loss: 0.862 | Train Exp:   2.369
+        Val. Loss: 1.699 |  Val. Exp:   5.468
+        Learning Rate: 0.0000984
     Translated example sentence: 
-    the old woman is watching the soccer game while eating candy .
+    the old woman is looking at the soccer game and eating .
 
-    Bleu score 36.29
-
+    Bleu score 37.47

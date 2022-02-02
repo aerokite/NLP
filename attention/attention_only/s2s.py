@@ -62,7 +62,7 @@ english_field.build_vocab(train_data, min_freq=2)
 source_vocab_size = len(german_field.vocab)
 target_vocab_size = len(english_field.vocab)
 
-num_epochs = 100
+num_epochs = 1000
 learning_rate = 0.0005
 # Large batch size exceeds free GPU memory
 batch_size = 100
@@ -70,7 +70,7 @@ batch_size = 100
 # I will call it hidden_dim & embedding_dim as well
 d_model = 300
 # Number of repeated layers
-n_layers = 2
+n_layers = 4
 # Number of heads
 n_heads = 4
 ffn_dim = 1200
@@ -93,8 +93,8 @@ decoder = Decoder(target_vocab_size, d_model, n_layers, n_heads, ffn_dim, source
 model = Seq2Seq(encoder, decoder).to(device)
 
 # This is to use Adam optimizer
-optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(0.9, 0.98), eps=1e-9)
-scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 5.0, gamma=0.95)
+optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(0.9, 0.998), eps=1e-9)
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 1.0, gamma=0.85)
 
 
 # This is to use CrossEntropy loss function.
